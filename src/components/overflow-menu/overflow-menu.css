@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+::slotted(ul) {
+  list-style: none;
+}
+.navbar p {
+  font-size: 40px;
+}
