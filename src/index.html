@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/overflow-menu.esm.js"></script>
-    <script nomodule src="/build/overflow-menu.js"></script>
-    <style>
-      overflow-menu li {
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <overflow-menu heading="welcome to stencil">
-      <ul>
-        <li><a href="">Welcome</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">Contact us</a></li>
-        <li><a href="">Welcome</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">Contact us</a></li>
-        <li><a href="">Welcome</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">Contact us</a></li>
-      </ul>
-    </overflow-menu>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
 
-    <script>
-      const menu = document.querySelector('overflow-menu');
-      menu.heading = 'dfdf title';
-    </script>
-  </body>
+  <script type="module" src="/build/overflow-menu.esm.js"></script>
+  <script nomodule src="/build/overflow-menu.js"></script>
+  <style>
+    overflow-menu {
+      --gap: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <overflow-menu heading="welcome to stencil">
+    <ul>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Falkenberg">
+          Falkenberg
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Braga">
+          Braga
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Stockholm">
+          Stockholm
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Trnava">
+          Trnava
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Plovdiv">
+          Plovdiv
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Klaip%C4%97da">
+          Klaipėda
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Punta_Cana">
+          Punta Cana
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Lisbon">
+          Lisbon
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Klaip%C4%97da">
+          Klaipėda
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Punta_Cana">
+          Punta Cana
+        </a>
+      <li>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Lisbon">
+          Lisbon
+        </a>
+      </li>
+    </ul>
+  </overflow-menu>
+
+  <script>
+    const menu = document.querySelector('overflow-menu');
+    menu.heading = 'dfdf title';
+  </script>
+</body>
+
 </html>
